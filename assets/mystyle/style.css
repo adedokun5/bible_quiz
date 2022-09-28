@@ -1,0 +1,148 @@
+body
+{
+	background-color: #E3F1E8;	
+}
+header
+{
+	background-color: #578C6E;
+	color: white;
+	font-family: serif;
+}
+.offcanvas-title
+{
+	color: #606060;
+}
+.org-name
+{
+	border: 1px solid white;
+	border-radius: 3px;
+	padding: 2px;
+	margin: 5px;
+}
+a
+{
+	color: #E3F1E8;
+	text-decoration: none;
+}
+a:hover
+{
+	color: #C4FCEF;
+}
+.offcanvas-btn
+{
+	font-weight: bolder;
+	color: #606060;
+}
+footer
+{
+	background-color: #C4FCEF;
+	color: #578C6E;
+	font-family: serif;
+}
+.footer-list-title
+{
+	list-style: none;
+}
+.footer-link
+{
+	color: #578C6E;
+}
+.footer-link:hover
+{
+	color: green;
+}
+.copyright
+{
+	background-color: #578C6E;
+	color: white;		
+}
+
+@media screen and ( max-width: 767px){
+	.img-box{
+		height: 150px;
+		width: 150px;
+		float: right;
+		margin-bottom: 4px;
+	}
+}
+
+@media screen and ( min-width: 768px){
+	.img-box{
+		height: 150px;
+		width: 150px;
+		margin: 0px auto;
+	}
+}
+
+@media screen and ( max-width: 700px ){
+	.modal{
+		margin-top: 28%;
+	}
+}
+
+@media screen and ( min-width: 701px ){
+	.modal{
+		margin-top: 20%;
+	}
+}
+
+@media screen and ( min-width: 850px ){
+	.modal{
+		margin-top: 17%;
+	}
+}
+
+@media screen and ( min-width: 1000px ){
+	.modal{
+		margin-top: 13%;
+	}
+}
+
+@media screen and ( max-width: 575px ){
+	.offcanvas-trigger-btn{
+		margin-top: 30%;
+	}
+}
+
+@media screen and ( max-width: 991px ){
+	.del-button{
+		margin-top: 5%;
+	}
+}
+
+@media screen and ( max-width: 768px ){
+	.medium-screen{
+		display: none;
+	}
+}
+
+@media screen and ( max-width: 400px  ){
+	.small-screen{
+		display: none;
+	}
+}
+
+.users, .active-users, .score {
+	width: 120px;
+	height: 140px;
+	background-color: white;
+	border-radius: 3px;
+	box-shadow: 1px 1px 1px 2px #578C6E;
+}
+
+@media screen and ( max-width: 399px  ){
+	.score{
+		display: none;
+	}
+}
+
+.result-box{
+	display: inline-block;
+	width: 80px;
+	height: 50px;
+	background-color: #578C6E;
+	color: white;
+	border-radius: 50%;
+	font-size: 20px;
+	padding-top: 5%;
+}
