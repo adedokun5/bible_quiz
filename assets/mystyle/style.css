@@ -146,3 +146,17 @@ footer
 	font-size: 20px;
 	padding-top: 5%;
 }
+
+.login-form{
+	background-color: #C4FCEF;
+	padding: 15px;
+	color: black;
+	border: 1px solid #578C6E;
+	border-radius: 6px;
+}
+
+.login-form-title{
+	font-family: serif;
+	color:  #578C6E;
+	font-style: italic;
+}

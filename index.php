@@ -17,7 +17,7 @@
 	$server_name = "https://".$_SERVER['SERVER_NAME'];
 	$uri = $_SERVER['REQUEST_URI'];
 	//url
-	$main_url = "$server_name/bible_quiz";
+	$main_url = "$server_name/my_apps/bible_quiz";
 	$app_url = "$server_name/$uri";
 
 	$uri_arr = explode( '/', $uri );
@@ -31,7 +31,7 @@
 	{
 		setcookie( 'access', '', time() - 5000 );
 		session_destroy();
-		header("location:./", true, 301 );
+		header("location:login", true, 301 );
 	}
 
 	if ( !$page || !isset( $_COOKIE['access'] ) ) 
@@ -52,7 +52,7 @@
 	} 
 	else 
 	{
-		header( "location: $main_url", true, 301 );
+		header( "location:$main_url", true, 301 );
 		exit();
 	}
 	
