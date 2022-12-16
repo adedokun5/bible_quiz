@@ -32,21 +32,24 @@
 		  		</thead>
 		  		<tbody class="fw-bold">
 		  			<?php
-		  				$sn = 0;
-		  				foreach ( $users as $user_dt ) 
+		  				if ( $users ) 
 		  				{
-			  				$sn++;
-			  				$pag_admin_id = base64_encode( $user_dt['id'] );
-			  			?>
-			  			<tr>
-			  				<td> <?= $sn ?> </td>
-			  				<td> <?= $user_dt['name'] ?> </td>
-			  				<td class="medium-screen"> <?= $user_dt['lowest_score'] ?> </td>
-			  				<td class="medium-screen"> <?= $user_dt['best_score'] ?> </td>
-			  				<td> <?= $user_dt['status'] ?> </td>
+			  				$sn = 0;
+			  				foreach ( $users as $user_dt ) 
+			  				{
+				  				$sn++;
+				  				$pag_admin_id = base64_encode( $user_dt['id'] );
+				  			?>
+				  			<tr>
+				  				<td> <?= $sn ?> </td>
+				  				<td> <?= $user_dt['name'] ?> </td>
+				  				<td class="medium-screen"> <?= $user_dt['lowest_score'] ?> </td>
+				  				<td class="medium-screen"> <?= $user_dt['best_score'] ?> </td>
+				  				<td> <?= $user_dt['status'] ?> </td>
 
-			  			</tr>
+				  			</tr>
 			  		<?php
+			  				}
 			  			}
 			  		?>
 		  		</tbody>
@@ -55,7 +58,9 @@
 
 		  	<section>
 					<?php 
-						$prev = $page - 1;
+						if ( $users ) 
+						{
+							$prev = $page - 1;
 					?>
 					<nav aria-label="Page navigation example">
 					  <ul class="pagination" >
@@ -105,6 +110,9 @@
 					    ?>
 					  </ul>
 					</nav>
+					<?php
+						}
+					?>
 				</section>
 		  </div>
 		</div>

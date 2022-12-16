@@ -10,8 +10,6 @@
 	{
 		use DatabaseLogic;
 
-		private $db_table_name = 'questions';
-
 		function getAllUser( array $dt )
 		{
 			$sql = " SELECT * FROM `users`";

@@ -50,6 +50,7 @@
 		$msg =  '<h5 class="alert alert-danger text-center p-2"> No Record Found</h5>';
 		$best_score = 0;
 		$active_users = 0;
+		$users = false;
 
 	}
 	
