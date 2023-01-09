@@ -72,6 +72,7 @@
 						</span>
 						<div class="text-center mt-3">
 							<button class="btn btn-success fw-bold" disabled name="save_btn" id="save_btn" >Submit</button>
+							<p>Already have an account? <a href="login" class="text-dark fw-bold">Sign in</a></p>
 						</div>
 
 		    	</div>

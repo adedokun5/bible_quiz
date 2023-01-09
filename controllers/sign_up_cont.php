@@ -71,5 +71,5 @@
 	}
 
 	//New Admin Interface
-	include_once( 'views/new_admin.php' );
+	include_once( 'views/sign_up.php' );
 ?>

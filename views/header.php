@@ -12,7 +12,7 @@
 <body>
 
 	<?php 
-		if ( !( $page == 'login' ) ) 
+		if ( !( $page == 'login' || $page == 'sign_up' ) ) 
 		{
 			$admin_dt = $_SESSION['admin_dt'];
 			$account_type = $admin_dt['acct_type'];
@@ -47,12 +47,6 @@
 						    		if ( $account_type == 1 ) 
 						    		{
 						    	?>
-								    	<li class="list-group-item">
-												<a href="new_admin" class="btn offcanvas-btn">
-												 	<i class="bi bi-person-plus-fill h3 text-success"></i> 
-												 	Add New Admin
-												</a>				    	
-											</li>
 								    	<li class="list-group-item">
 								    		<a href="admins" class="btn offcanvas-btn">
 								    			<i class="bi bi-people-fill h3 text-success"></i> 

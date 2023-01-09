@@ -1,5 +1,5 @@
 <?php 
-	if ( !( $page == 'login' ) ) 
+	if ( !( $page == 'login' || $page == 'sign_up' ) ) 
 	{
 ?>
 	<footer class=" text-center">

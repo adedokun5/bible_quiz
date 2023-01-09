@@ -26,6 +26,7 @@
 
 				<div class="text-center mt-2">
 					<button type="submit" name="login_btn" id="login_btn" class="btn btn-success fw-bold">Login</button>
+					<p>Don't have an account? <a href="sign_up" class="text-dark fw-bold">Sign up</a></p>
 				</div>
 			</form>
 		</section>

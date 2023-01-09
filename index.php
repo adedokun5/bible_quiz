@@ -27,14 +27,7 @@
 	$page_arr = explode( '?', $page );
 	$page = $page_arr[ 0 ];
 
-	if ( $page == 'logout' ) 
-	{
-		setcookie( 'access', '', time() - 5000 );
-		session_destroy();
-		header("location:login", true, 301 );
-	}
-
-	if ( !$page || !isset( $_COOKIE['access'] ) ) 
+	if ( !$page ) 
 	{
 		$page = 'login';
 	}
